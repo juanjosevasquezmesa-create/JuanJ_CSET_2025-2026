@@ -1,0 +1,23 @@
+    .container {
+      display: flex; /* Enables flexbox layout */
+      height: 100vh; /* Example: full viewport height */
+      max-width: 250px;
+    }
+
+    .left-panel {
+      width: 200px; /* Fixed width for the left panel */
+      flex-shrink: 0; /* Prevents shrinking */
+      /* Add styling for the left panel */
+    }
+
+    .right-panel {
+      flex-grow: 1; /* Allows the right panel to take up remaining space */
+      display: flex; /* Use flexbox for the textarea within */
+      overflow: auto; /* Adds scrollbar if content exceeds height */
+    }
+
+    .right-panel textarea {
+      resize:both; /* Optional: disables textarea resizing by user */
+      width: 150px; /* Ensure textarea fills its container horizontally */
+      height: 150px; /* Ensure textarea fills its container vertically */
+    }

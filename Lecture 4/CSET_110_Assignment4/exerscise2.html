@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 4vh;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .my-section {
+            background-image: url(Plants_vs._Zombies_2-_Reflourished.webp); /* Path to your image */
+            filter: brightness(50%);
+            background-repeat: no-repeat; /* Prevent image repetition */
+            background-size: cover; /* Scale image to cover the entire section */
+            background-position: center; /* Center the image */
+            min-height: 400px; /* Ensure the section has enough height to display the background */
+            color: white; /* Example: Adjust text color for readability against the background */
+            padding: 20px; /* Example: Add padding for content within the section */
+        }
+        header{
+            padding: 5% 9%;
+        }
+        .logo{
+            border: 2px solid black;
+            margin-top: 4.5%;
+            margin-left: 10px;
+            float: left;
+            border-radius: 60px;
+            width:100px;
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(PVZRE.png);
+        }
+        .title{
+            font-size: 6vh;
+            width: 400px;
+            float: left;
+        }
+        .title-text{
+            margin-bottom: 5vh;
+            text-align: right;
+        }
+        .right-text{
+            text-align: right;
+        }
+        ul{
+            list-style: none;
+            align-self: right;
+        }
+        li{
+            display: inline-block;
+            margin: 0 10px;
+            vertical-align: top;
+        }
+        .call-to-action{
+            font-size: 6vh;
+            text-align: center;
+        }
+        .help-call{
+            padding: 0% 20%;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .btn{
+            color: black;
+            text-decoration: none;
+            border: 4px solid black;
+            border-radius: 8px;
+            padding: 10px  15px;
+        }
+        .btn:hover{
+            border-color: yellow;
+            background-color: rgb(50, 50, 50);
+            color: wheat;
+            cursor: pointer;
+        }
+        .donate-btn{
+            margin: 40px;
+
+            text-align: center;
+        }
+        .link{
+            cursor: pointer;
+        }
+        .link:hover{
+            color: grey;
+        }
+        .column-container{
+            max-width: 80vw;
+            display: flex; 
+            margin: 0 auto;
+            margin-top: 10%;
+            margin-bottom: 1%;
+        }
+        img{
+            background-color: inherit;
+            display: block;
+            padding-top: 10%;
+            max-width: 40%;
+            margin-left: 33%;
+            margin: 0 auto 7%;
+        }
+        .column{
+            font-size: larger;
+            border: 3px solid rgb(255, 206, 141);
+            background-color: antiquewhite;
+            border-radius: 4px;
+            text-align: center;
+            width: 31%;
+            flex: 1;
+        }
+        .cAlign{
+            margin-right: 1%;
+        }
+        .column p{
+            padding: 0 9px;
+            margin-bottom: 25px;
+            background-color: inherit;
+            font-size: medium;
+        }
+        .footer-color{
+            background-color: burlywood;
+        }
+        .footer-section{
+            display: flex;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .end-cred{
+            background-color: burlywood;
+            float: left;
+            width: 50%;
+            padding-bottom: 44px;
+            padding-top: 3.3%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .footer-ul{
+            background-color: inherit;
+            float:right;
+            flex: 1;
+            text-decoration: none;
+            width: 50%;
+            padding-top: 3.3%;
+            padding-bottom: 44px;
+        }
+        .footer-ul li{
+            background-color: inherit;
+        }
+        body{
+            background-color:rgb(224, 192, 255);
+        }
+    </style>
+    <section class="my-section" style="width: 100%; height: 100%;">
+        <div style="position: absolute; inset: 0; width: 100%; height: 100%; background: inherit; filter: brightness(50%); z-index: 1;"></div>
+        <div style="position: relative; z-index: 2;">
+            <div class="logo"></div>
+            <header>
+                <section style="filter: none;">
+                    <h1 class="title">Plants Vs Zombies 2: Reflourished</h1>
+                    <div class="title-text">The mod for the orignal game Plants vs Zobies 2</div>
+                    <div class="right-text">
+                        <ul>
+                            <li class="link">Wiki</li>
+                            <li class="link">Plants</li>
+                            <li class="link">Zombies</li>
+                            <li class="link">Worlds</li>
+                            <li class="link">Updates</li>
+                        </ul>
+                    </div>
+                </section>
+            </header>   
+        </div>
+    </section>
+   
+    <head>
+        <section class="call-to-action">Join in this new balanced game where Transactions are in the past</section>
+        <section class="help-call">Please help us in donation to support the creation of this new game, to bring the skill back into PVZ!</section>
+        <section class="donate-btn"><a href="#" class="btn">Donate Here</a></section>
+    </head>
+    <body>
+        <div class="column-container">
+            <section class="column cAlign">
+                Sun Producer
+                <img src="Sunflower.webp" alt="Sun Flower Image">
+                <p>Sun Producers provide the player the battle currency "Sun". These are integral to the early game and should be preserved but not protected at all cost. Often it is best to place these plants in front of the more expensive attacking plants.</p>
+            </section>
+            <section class="column cAlign">
+                Slow-Down
+                <img src="Wall-nut.webp" alt="Wall Nut Image">
+                <p>Slow-Down plants can range from plants that completely stop the zombies to thoes that reduce the progress of zombies. These plants are often put in the direct front of the lawn usually in front of the sun producers and the slow down plants that are often contact based effects are palced on Zombies to have their effects occur.</p>
+            </section>
+            <section class="column">
+                Attacking plants
+                <img src="Peashooter.webp" alt="Peashooter Image">
+                <p>These plants are interal to the defense attacking plants can range from instant activating plants to constanst damage dealers. These plants are often the most expensive and for that reason are palced at teh far right back of the lawn to have the protections of the slowdowns and sun producers. These plants should be picked to combat the zombies that are in the levels.</p>
+            </section>
+        </div>
+    </body>
+    <footer>
+            <div class="footer-section footer-color">
+                <div class="end-cred">Website created by: Juan J. Vasquez</div>
+                <ul class="footer-ul">
+                    <li class="link">Wiki</li>
+                    <li class="link">Plants</li>
+                    <li class="link">Zombies</li>
+                    <li class="link">Worlds</li>
+                    <li class="link">Updates</li>
+                </ul>
+            </div>
+    </footer>
+</html>

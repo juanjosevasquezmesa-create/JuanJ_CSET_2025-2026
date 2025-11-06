@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        /*add media Query and move into an external css file*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .title-text{
+            text-align: center;
+        }
+        .flex-container {
+            padding: 10px;
+            flex-direction: column;
+            display: flex; /* Enables Flexbox */
+            flex-wrap: wrap; /* Allows items to wrap to the next line */
+            width: auto; /* Example width for the container */
+            height: 100vh; /* Example height for the container */
+            overflow: hidden; 
+            /* Other styles for the overflowing content */
+            background-color: lightblue;
+            gap: 10px;
+        }
+
+        .flex-item {
+            flex-basis: 100%; /* Each item takes 50% of the container's width, creating 2 columns */
+            height: 50vh; /* Each item takes 50% of the container's height, creating 2 rows */
+            display: flex; /* Center content within each cell */
+            justify-content: center;
+            align-items: center;
+            border: 1px solid gray; /* For visualization of individual cells */
+            border-radius: 4px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+            
+        }
+        .boat{
+            background-image: url(boat.jpg);
+            background-position: center 2%;
+            
+        }
+        .bridge{
+            background-image: url(bridge.jpg);
+        }
+        .ferris-wheel{
+            background-image: url(ferris-wheel.jpg);
+        }
+        .hill{
+            background-image: url(hill.jpg);
+        }
+        .text{
+            display: block;
+        }
+        .title{
+            font-size: x-large;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            background-color: aquamarine;
+        }
+    </style>
+    <body>
+        <section class="title">Juan's Gallery</section>
+        
+        <div class="flex-container">
+
+            <div class="flex-item boat">
+            </div>
+            <div class="flex-item bridge">
+            </div>
+            <div class="flex-item ferris-wheel">
+                
+            </div>
+            <div class="flex-item hill">
+                
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+        /*add media Query and move into an external css file*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .title-text{
+            text-align: center;
+        }
+        .flex-container {
+            padding: 10px;
+            display: flex; /* Enables Flexbox */
+            flex-wrap: wrap; /* Allows items to wrap to the next line */
+            width: auto; /* Example width for the container */
+            height: auto; /* Example height for the container */
+            /* Other styles for the overflowing content */
+            background-color: lightblue;
+            gap: 10px;
+        }
+        .container{
+            border: 3px solid darkcyan;
+            border-radius: 4px;
+            width: 40vw;
+            display: flex;
+            margin: auto;
+            transition: transform 0.3s ease-in-out;
+            box-sizing: border-box;
+            background-color: rgb(175, 232, 232);
+        }
+        .flex-item {
+            flex-basis: 150%;
+            height: 40vh; /* Each item takes 50% of the container's height, creating 2 rows */
+            margin: 2%;
+            display: flex; /* Center content within each cell */
+            background-position: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        .container:hover{
+            transform: scale(1.05);
+        }
+        .boat{
+            background-image: url(boat.jpg);
+            background-position: center;
+            
+        }
+        .bridge{
+            background-image: url(bridge.jpg);
+        }
+        .ferris-wheel{
+            background-image: url(ferris-wheel.jpg);
+        }
+        .hill{
+            background-image: url(hill.jpg);
+        }
+        .text{
+            display: block;
+        }
+        .title{
+            font-size: x-large;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            background-color: rgb(203, 255, 238);
+            padding-bottom: 0.5%;
+        }
+        .right{
+            display: flex;
+            float: left;
+            border-radius: 4px;
+            margin: 10px;
+            padding: 1%;
+            flex-grow: 1;
+            height: auto; 
+            width: 96.5%;
+            font-size: larger;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        @media all and (max-width: 900px){/* Media Quiries have to be at the bottom to be applied*/
+            .container{
+                width: 80vw;
+            }
+            
+        }

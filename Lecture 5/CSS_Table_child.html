@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even){
+            /*this will make every 2nd row a different color this can be changed to odd or a specific number */
+            /*This starts from the top row when counting (1)*/
+            background-color: #f2f2f2;
+        }
+
+        /* tr:nth-last-child(odd){
+            //This will start from the ememnt and count backwards by the condition
+            background-color: rgb(72, 53, 17);
+        } */
+        table{ /*This removes the space in between the outside border and the cell borders*/
+            /*The border has to be applied to both the cells (td and th) and the whole box */
+            border-collapse: collapse;
+            width: 100vw;
+        }
+        
+
+    </style>
+    <body>
+        <table>
+            <table>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+                <tr>
+                    <td>Juan</td>
+                    <td>J.</td>
+                </tr>
+                <tr>
+                    <td>Adrian</td>
+                    <td>R.</td>
+                </tr>
+            </table>
+        </table>
+    </body>
+</html>

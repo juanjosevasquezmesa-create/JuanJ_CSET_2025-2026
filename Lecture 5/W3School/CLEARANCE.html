@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color:#E7E9EB;
+}
+#myDIV {
+  height:300px;
+  background-color:#FFFFFF;
+}
+#blueDIV {
+  width:80px;
+  background:lightblue;
+  float:left;
+  padding:10px;
+}
+
+#redDIV {
+  padding:10px;
+  width:80px;
+  background:coral;
+  float:right;
+}
+#my{
+	clear: right
+    ;
+}
+</style>
+</head>
+<body>
+
+<h1>The clear Property</h1>
+
+<div id="myDIV">
+<div id="blueDIV">This DIV floats left</div>
+<div id="redDIV">And this DIV floats right</div>
+
+<div id="my">
+Below is a 200px DIV with 10px padding and a 30px border.
+If box-sizing is "border-box", the total width of the DIV element is always 200px,
+but if box-sizing is "content-box", the total width is 200px plus padding and border = 280px.
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,8 @@
+"inline-block" display style allows elements to be side by side but also allow it to have the padding that inline tags do not have.
+"line break" is the term used to describe the action of moving an element below another 
+
+inline-block acts like a block but doesnt take the whole width and allows other inline tags to be beside it
+
+Left align -> float: left;
+center align -> margin: 0 auto;
+right align -> float: right;

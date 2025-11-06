@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .flexbox-container{
+            background-image: linear-gradient(red, yellow);
+            display: flex;
+            flex-direction: row;/*This is the default*/
+            justify-content: flex-start;/* this is the default but flex items will be on the start of the xis*/
+            border: 2px solid blueviolet;
+            flex-wrap: nowrap; /* Defuault and it shrinks when the user shrinks the window*/
+        }
+
+        .flexbox-item{
+            /* flex-shrink: 0; // this will make the items not change their size/shrink when the window is shrinked*/
+            flex-shrink: 1;/* Default preset */
+            width: 200px;
+            margin: 10px;
+            border: 3px solid #333;
+            background-color: #dfdfdf;
+        }
+
+        .flexbox-item-1{
+            height: 100px;
+            flex: 1 0 0px; /**/
+        }
+
+        .flexbox-item-2{
+            height: 200px;
+            flex-grow: 2;
+            flex-basis: 0;
+            align-self: center;
+        }
+
+        .flexbox-item-3{
+            height: 300px;
+            flex-grow: 3;
+            flex-basis: 0px;
+
+        }
+    </style>
+    <body>
+        <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1">box 1</div> 
+            <div class="flexbox-item flexbox-item-2">box 2</div>
+            <div class="flexbox-item flexbox-item-3"> box 3</div>
+            <!-- You can have multiple classes called for one tag (ie 'flexbox-item' and 'flexbox-item-1')-->
+        </div>
+    </body>
+</html>

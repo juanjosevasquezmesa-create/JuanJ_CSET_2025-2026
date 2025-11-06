@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .big-section{
+            position: relative;
+            height: 500px;
+            width: 1000px;
+            background-color: wheat;
+            box-sizing: border-box;
+            justify-content: end;
+            transition: background-color 0.3s;
+        }
+        .section{
+            height: 300px;
+            width: 700px;
+            background-color: rgb(239, 195, 114);
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: background-color 0.3s;
+        }
+        /* Prevent .big-section:hover from being triggered when hovering .section */
+        .section:hover .big-section:hover ~ .big-section {
+            background-color: wheat;
+        }
+        .big-section:hover{
+            background-color: aqua;
+        }
+        .section:hover{
+            background-color: azure;
+        }
+
+        .mini-section{
+
+        }
+    </style>
+    <body>
+        <div class="big-section">
+            <div class="section">
+                <div></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: blue;
+
+            width: 100vw;
+        }
+        img {
+            position: absolute;
+            /* This is used to make the picture 'float' behind other elements  */
+            left: 0px;
+            top: 0px;
+            /* These two are used to make the image at the top of the page and aligned to the left of the page */
+            z-index: -1;
+            /* -1 is used to make this picture elemnt appear behind all other elements */
+            opacity: 80%;
+            filter: brightness(50%);
+            /*filter: grayscale(50%);// This is super nice to give a grey tint like in the old images */
+        }
+    </style>
+    <div style="width:100vw; height:20vh; overflow:hidden; position:absolute;">
+        <img src="Zoro_spyglass.jpeg" style="width:100%; height:100%; object-fit:cover; object-position:70%;">
+    </div>
+
+    <header>
+
+    </header>
+    <section>
+
+    </section>
+    <footer>
+
+    </footer>
+</html>

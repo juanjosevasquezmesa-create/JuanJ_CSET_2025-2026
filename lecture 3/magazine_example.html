@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="universalcss.css">
+    <style>
+        .page{
+            width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+            background-color: #EAEDF0;
+        }
+        .border{
+            border: 1px solid black;
+        }
+        .menu{
+            height :100px;
+            background-color: #B2D6FF;
+        }
+        img{
+            margin: 40px 0;
+            width: 200px;
+        }
+        .sidebar{/*This will also make any content that it would've been on top of flow around it*/
+            float: left;
+            width:200px;
+            height: 300px;
+            background-color: #F09A9D;
+        }
+        .content {
+            /*float: left; /*this will make the sidebar and the conent box side by side becuas they go in the top down hierarchy in code but when displayed itll be left to right in context to the higherarchy*/ 
+            width: 650px;
+            height: 500px;
+            background-color: #F5CF8E;
+        }
+        .footer{
+            /*clear: both;/*Clear will ignore the floats that appear before it so instead of floating around/flowing aroung them itll line break like a block (itll go to the next part below it)*/
+            overflow: hidden;
+            background-color: #D6E9FE;
+        }
+        .column{
+            float: right;
+            width: 31%;
+            margin: 20px 1.15%;
+            height: 160px;
+            background-color: #B2D6FF;
+        }
+        .bg{
+            background-color: aquamarine;
+        }
+        .avatar{
+            float: left;
+            width: 60px;
+            height: 60px;
+            margin: 25px;
+            border-radius: 40px;
+            background-color: #D6E9FE;
+        }
+        .username {
+            margin-top: 30px;
+        }
+        .comment {
+            margin: 10px;
+            overflow: hidden;/*This is used to make sure that the text does not overflow and go under the avatar img*/
+        }
+    </style>
+    <body>
+        <div class="page">
+            <div class="menu">menu</div>
+            <div class="bg">
+                <div class="sidebar"><img src="SourPatchKids.webp" alt="" ></div>
+                <div class="content">content</div>                
+            </div>
+
+            <div class="footer">
+                <div class="column"></div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+            <div class="footer">
+                <div class="column">
+                    <div class="avatar"></div>
+                    <h3 class="username"> Bob Smith</h3>
+                    <p>Words</p>
+                </div>
+                <div class="column"></div>
+                <div class="column"></div>
+            </div>
+        </div>
+    </body>
+</html>

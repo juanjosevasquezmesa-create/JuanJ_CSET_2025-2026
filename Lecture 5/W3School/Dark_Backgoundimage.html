@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  position: absolute;
+  /* This is used to make the picture 'float' behind other elements  */
+  
+  left: 0px;
+  top: 0px;
+  /* These two are used to make the image at the top of the page and aligned to the left of the page */
+  z-index: -1;
+  /* -1 is used to make this picture elemnt appear behind all other elements */
+  opacity: 80%;
+  filter: brightness(50%);
+  /*filter: grayscale(50%);// This is super nice to give a grey tint like in the old images */
+}
+h1, p{
+  color: wheat;
+}
+</style>
+</head>
+<body>
+
+<h1>The z-index Property</h1>
+
+<img src="Zoro_spyglass.jpeg" width="100%" height="auto">
+
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+</body>
+</html>

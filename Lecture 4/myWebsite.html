@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: rgb(43, 43, 43);
+            height: 9vh;
+            width:100vw;
+            border: 0.5vh solid black;
+        }
+
+        .divider{
+            margin-left:83vw;
+        }
+
+        .intro{
+            float: auto;
+            padding-left: 2vw;
+            vertical-align: center;
+            color: white;
+        }
+
+        .link{
+            color: white;
+            margin-right: 10px;
+        }
+
+        .main-content-wrapper {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+            min-height: 80vh;
+        }
+
+        .mainsection{
+            background-color: rgb(230, 238, 239);
+            padding: 1%;
+            margin: 1vw;
+            width: 75vw;
+            height: fit-content;
+        }
+
+        .side-image {
+            flex: 1;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 0.5vw;
+        }
+        .side-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        h3{
+            margin-top: 20px;
+        }
+        .column{
+            float: left;
+            width: 29%;
+            margin: 20px 1.15%;
+            height: 160px;
+            background-color: #B2D6FF;
+        }
+
+    </style>
+    <header>
+        <section class="intro">One Piece</section>
+        <div class="divider"></div>
+            <section class="link">Link 1 </section>
+            <section class="link">Link 2 </section>
+            <section class="link">Link 3</section>
+    </header>
+    <body>
+        <div class="main-content-wrapper">
+            <div>
+                <div class="mainsection">
+                    <h1>The Strawhat Crew!</h1>
+                    <h3>One Piece follows Monkey D. Luffy, a rubber-powered pirate who aims to become the next Pirate King by finding the legendary treasure, One Piece, left by the previous Pirate King, Gol D. Roger. To achieve his dream, Luffy gathers a diverse crew of the Straw Hat Pirates, embarking on an epic journey across the dangerous Grand Line, battling powerful enemies, and uncovering the world's hidden history along the way.</h3>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; width: 75vw; gap: 20px;">
+                    <section class="column" style="flex: 0 0 29%; min-width: 250px;"></section>
+                    <section class="column" style="flex: 0 0 29%; min-width: 250px;"></section>
+                    <section class="column" style="flex: 0 0 29%; min-width: 250px;"></section>
+                    <section class="column" style="flex: 0 0 29%; min-width: 250px;"></section>
+                    <section class="column" style="flex: 0 0 29%; min-width: 250px;"></section>
+                </div>
+            </div>
+            <aside class="side-image">
+                <img src="One_piece_crew.webp" alt="One Piece Character">
+            </aside>
+        </div>
+    </body>
+</html>

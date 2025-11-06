@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  /*right: 0;/*This will make the records appear on the right */
+  display: none;/*This will make the elements not load in so they are hidden*/
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);/*this will add a shadow on the edge of the box */
+}
+
+.dropdown-content a {/*This will make any link a block (ie it'll line break) as well as it's own element/reocord in the menu*/
+  /*any link inside of a parnent tag with the class'dropdown-content' will be effected by this*/
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: aquamarine;
+}
+
+.dropdown:hover .dropdown-content {/*When the user howvers over the 'dropdown menu' button the elements inside will load */
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+
+<h2>Dropdown Menu</h2>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown Menu</button>
+  <div class="dropdown-content">
+  <!--
+    Each a tag will be a record for the dropdown menu
+  -->
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+  </div>
+</div>
+
+<p><strong>Note:</strong> We use href="#" for test links. In a real web site this would be URLs.</p>
+
+</body>
+</html>
+
+

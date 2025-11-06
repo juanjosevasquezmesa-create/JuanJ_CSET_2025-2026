@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 4vh;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;/*This means that the padding/margin caluculations will include every pixel on the screen.*/
+        }
+        .felxBox-container{
+            display: flex;
+            flex-shrink: 0;
+            justify-content: flex-start;
+            flex-wrap: wrap-reverse;
+            
+        }
+        .section1{
+            background-color: grey;
+            color: white;
+            width: 100vw;/* This is the same as 100% (vw - viewport width)*/
+            height: 10vh;/* This is the same as 10% (vh - viewport height)*/
+        }
+        .sidebyside{
+            width: 80vw;
+            height: 80vh;
+            margin: 0 auto;
+        }
+        .hero{
+            margin: 1vh auto;/*this will center the item-*/
+            background-color: beige;
+            width: 80vw;
+            height: 200px;
+        }
+        .conent{
+            margin: 0;
+            display: inline-block;
+            background-image: linear-gradient(blueviolet, grey);
+            width: 60vw;
+        }
+        .sidebar{
+            margin: 0;
+            display: inline-block;
+            background-image: repeating-linear-gradient(orange, yellow);
+            width: 19vw;
+        }
+        .footer{
+
+        }
+    </style>
+    <body>
+        <div class="flexBox-container">
+            <section class="section1">Header</section>
+            <section class="hero">Hero</section>
+            <div class="sidebyside">
+                <section class="conent">content</section>
+                <section class="sidebar">sidebar</section>
+                <section class="footer">footer</section>
+            </div>
+        </div>
+    </body>
+</html>

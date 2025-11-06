@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .flexbox-container{
+            background-image: linear-gradient(red, yellow);
+            display: flex;
+            flex-direction: row;/*This is the default*/
+            justify-content: flex-start;/* this is the default but flex items will be on the start of the xis*/
+            border: 2px solid blueviolet;
+            flex-wrap: nowrap; /* Defuault and it shrinks when the user shrinks the window*/
+            
+            /* 
+            justify-content: space-around; // 
+            justify-content: space-between;
+            justify-content: space-evenly;
+            */
+
+            /* flex-wrap: wrap; // this will move the items down if the user's window shrinks too far */
+            
+            /* justify-content: space-around; // this will add equal padding around all of the containers */
+            
+            /* align-items: flex-end; //this will orientate all of the conent to the bottom of the main axis (ie align them to the bottom)(great for graphs) */
+            
+            /* align-items: center; // js run it to see twin */
+            
+            /* flex-direction: row-reverse; // this will make all of the items go from righ to left (ie backwards)*/
+            /* flex-direction: column-reverse; // same thing*/
+
+            /* flex-direction: column;// this will make the boxes in a column (like how it was before flex but it's automatically set to row)*/
+            
+            /* flex allows the boxes to shrink if the window shirnks as well */
+            /*if the containers are set to minimum height - flex in this case will set the size to all of the boxes to the the highest minimum (ie if 1 of 3 box has text that would extend to 900 px the others would do the same)*/
+            /* if done with normal height they are independant */
+            /* if using min-heigh they all adjust to the same as the highest min-height */
+        }
+
+        .flexbox-item{
+            /* flex-shrink: 0; // this will make the items not change their size/shrink when the window is shrinked*/
+            flex-shrink: 1;/* Default preset */
+            width: 200px;
+            margin: 10px;
+            border: 3px solid #333;
+            background-color: #dfdfdf;
+        }
+
+        .flexbox-item-1{
+            height: 100px;
+        }
+
+        .flexbox-item-2{
+            height: 200px;
+        }
+
+        .flexbox-item-3{
+            height: 300px;
+        }
+    </style>
+    <body>
+        <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1">box 1</div> 
+            <div class="flexbox-item flexbox-item-2">box 2</div>
+            <div class="flexbox-item flexbox-item-3"> box 3</div>
+            <!-- You can have multiple classes called for one tag (ie 'flexbox-item' and 'flexbox-item-1')-->
+        </div>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: wheat;
+        }
+        img.berd{
+            float: left;
+            padding: 15px;
+            width: 130px;
+        }
+        .clearfix{
+            overflow: auto;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .div-box{
+            border: 3px solid rgb(208, 149, 38);
+            padding: 1%;
+            margin: 1%;
+
+        }
+        .img-description{
+            font-size: inherit;
+            clear: left;
+        }
+        h1{
+            text-align: center;
+            padding-bottom: 2%;
+        }

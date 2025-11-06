@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        th, td {
+            border: 1px solid #ddd;
+            text-align: left;
+            padding: 8px;
+        }
+        table{ /*This removes the space in between the outside border and the cell borders*/
+            /*The border has to be applied to both the cells (td and th) and the whole box */
+            border-collapse: collapse;
+            width: 100vw;
+        }
+        tr:hover{
+            /*tr hover will highlight the whole row when hovered over*/
+            background-color: yellow;
+        }
+        .div1{
+            border: 1px solid red;
+            width: 50%;
+            height: 200px;
+            background-color: aliceblue;
+        }
+        .div1:hover{
+            background-color: yellow;
+            cursor: pointer;
+        }
+        p{
+            display: none;
+        }
+        div:hover p{
+            display: block;
+            color: blue;
+        }
+
+    </style>
+    <body>
+        <table>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>J.</td>
+            </tr>
+            <tr>
+                <td>Adrian</td>
+                <td>R.</td>
+            </tr>
+        </table>
+        <div class="div1">Hello chat <p>Secret chat</p></div>
+        <div>Normal div</div>
+    </body>
+</html>

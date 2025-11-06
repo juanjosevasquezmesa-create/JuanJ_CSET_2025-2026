@@ -1,0 +1,14 @@
+*{/* '*' means it will apply to everything in the file*/
+    /*
+    this template is called resetting in which there will be no padding or margins in the file
+    */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*This means that the padding/margin caluculations will include every pixel on the screen.*/
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

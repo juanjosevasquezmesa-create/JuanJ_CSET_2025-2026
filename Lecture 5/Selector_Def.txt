@@ -1,0 +1,16 @@
+check lecture 2 CSET 110 page 10
+
+if the tag being called is a parent tag it will not apply 
+
+p: first-child em{
+    color: blue;
+}
+
+html Example:
+
+<p>Text hello, <em>Not Effected</em></p> <!-- This p tag is not a child tag so the style ubove will not apply -->
+
+<div>
+    <p>Lets do this >:D, <em>Effected now</em></p> <!-- both of these em tags will be effected becuase the p tag is a child tag to the parent of the div-->
+</div>
+

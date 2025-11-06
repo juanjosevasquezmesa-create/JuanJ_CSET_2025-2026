@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            a:hover{
+                background-color: beige;
+                border-radius: 4;
+            }
+            h1{
+                padding-bottom: 60px;
+            }
+            html, body {
+                height: 100%;
+            }
+            body{
+                text-align: center; /*This being added to the body allows all the elemnts inside of it be centered in the page*/
+                width: 100%;
+                min-height: 100vh; /* Allows body to grow with content */
+                overflow: auto; /* Adds scrollbars if content overflows */
+            }
+            div{
+                padding-bottom: 1%;
+            }
+            div.btn{
+                background-color: cornflowerblue;
+            }
+            #section{
+                width: 31%;
+                margin: 0 20%;
+                height: 160px;
+            }
+            li{
+                display: inline-block;
+                /* Other styling for your elements */
+                padding: 10px;
+                border: 1px solid black;
+                margin: 5px;
+                background-color: aquamarine;
+                vertical-align: top;
+                overflow-wrap: anywhere;
+                box-shadow: 0px 1px 3px 1px;
+            }
+            #section3 ul li{
+                width: 30%;
+                height: 190px;
+                padding: 1.5em;
+
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(255, 184, 184);">
+        <div style="text-align: center; background-color: rgb(190, 247, 228); padding-bottom: 100px; display: flexbox;"><!-- adding text align here because it'll effect the click me text -->
+            <h1 style=" padding-top: 15px;">Ode's candy story you want it you can have it!</h1>
+            <a class="btn" style=" text-decoration: none; color: black; padding: 12px 20px; background-color: blueviolet; border-radius: 4px; border: 1px solid black;" href="#section3">button</a>
+        </div>
+        <div style="background-color: azure;">
+            <div style="text-align: center; display: block;">
+                <h1>Candies From all aroudn the world can be found here.</h1>
+            </div>
+            <div style=" text-align: center; margin: 0, auto;">
+                   <ul>
+                    <li><h2>Example 1</h2> <p>You can have multiple text tags inside of a list</p></li>
+                    <li><h2>Example 2</h2> <p>I dont know that will happen when i do this</p></li>
+                   </ul>
+            </div>
+            
+        </div>
+        <div>
+            <div id="section3" style="background-color: beige; padding: 2em 1em 1em;overflow: hidden;">
+                <ul style="list-style: none; margin: 0; padding: 0; vertical-align: top;">
+                    <li style="margin-bottom: 1em; height: auto;"><h1>Web Dev</h1><p>Words words words</p></li>
+                    <li style="height: auto;"><h1>Hello</h1> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum culpa neque quo eum et quasi velit voluptatum cum maiores exercitationem.</p></li>
+                    <li style="height: auto;"><h1>Juan Vasquez</h1> <p>This is a perculiar type of action</p></li>
+                </ul>
+            </div>
+            <div style="background-color: aquamarine;">
+                <h1>On the go have a bag of candy!</h1>
+                <p>Where dreams come true or smt idek</p>
+            </div>
+            <div >
+                <div style="padding: 25px 15px 35px 15px; background-color: rgb(36, 153, 237);color: white ;display: inline-block; float: left; width: 50%;">
+                    <h1>Contact Us</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, suscipit. Rerum ducimus a quod, ut et voluptas obcaecati unde fuga.</p>
+                </div>
+                <div style="padding: 25px 15px 35px 15px; background-color: rgb(25, 30, 33);color: white ;display: inline-block; float: left; width: 50%;">
+                    <h1>About the company</h1>
+                    <p>We prioritize the people and the consumer we workd for, people are the backbone of the working enviorment, and yap yap yap</p>
+                </div>
+                <div style="background-color: black; color: white; width: 100%;">
+                    <div style="display: inline-block; float: left; width:50%;background-color: black;padding-top: 5px;">Ode Emporium</div>
+                    <div style="display: inline-block; float: left; width: 50%;background-color: black;padding-top: 5px;">Thank you for watching</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+*{
+    overflow:auto;/*auto, hidden, scroll, visable, clip
+    visible - Default. The overflow is not clipped. The content renders outside the element's box
+    hidden - The overflow is clipped, and the rest of the content is hidden
+    scroll - Scrollbars are added. User must scroll to see all content    
+    auto - Similar to scroll, but adds scrollbars only when necessary
+    */
+}
