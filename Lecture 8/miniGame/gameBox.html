@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div id="box" style="
+            width: 50px;
+            height: 50px;
+            background-image: url(8_Bit_Mario_by_pokedude911.webp);
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        "></div>
+
+        <script>
+        let x = 100;
+        let y = 100;
+        const step = 10;
+        const box = document.getElementById("box");
+        
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "ArrowUp" && y > 0) y -= step;//the box moves up when the user clicks the up arrow key and the box is below the top line
+          if (event.key === "ArrowDown") y += step;
+          if (event.key === "ArrowLeft" ) x -= step;
+          if (event.key === "ArrowRight") x += step;
+        
+          box.style.left = x + "px";
+          box.style.top = y + "px";
+        });
+        </script>
+    </body>
+</html>

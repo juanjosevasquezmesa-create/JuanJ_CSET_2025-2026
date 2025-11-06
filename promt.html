@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<h1>The Window Object</h1>
+<h2>The prompt() Method</h2>
+
+<p>Click the button and type anything.</p>
+
+<button onclick="myFunction()">Click me!</button>
+
+<p id="demo"></p>
+
+<script>//this will allow js code inside of an html file
+function myFunction() {
+  let text;
+  let favDrink = prompt("What's your favorite drink?", "Coca-Cola");
+  console.log("Did you type this? " + favDrink);
+  document.getElementById("demo").innerHTML = "Did you type this? " + favDrink;
+}
+</script>
+
+</html>

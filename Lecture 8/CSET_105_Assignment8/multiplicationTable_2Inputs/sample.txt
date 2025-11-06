@@ -1,0 +1,18 @@
+    //This will check whether the condition is true or false
+    //If true the left value is the result, else if the condition is false the right value is returned
+    let num = (numX > numY) ? numX : numY;
+
+    if (numX > numY) {
+        num = numX;
+    } else {
+        num = numY;
+    }
+    //this checks if numX is greater than numY, so if numX is greater (condition is true) then num is assigned the value of numX if numY is greater the condition will be false having the second value be the value of num
+ 
+    for (let i = 0; i <= num; i++) {
+        const itemTd = document.createElement("td");
+        itemTd.setAttribute('style', "border: 1px solid black; padding 20px;");
+        itemTd.textContent = String(i) + " ";
+        tableRow0.appendChild(itemTd);
+    }
+

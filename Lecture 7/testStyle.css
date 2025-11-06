@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+*{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.rowBanner{
+    background: linear-gradient(115deg, #f9ce34, #ee2a7c, #6228d7);
+    background-color: aliceblue;
+    height: 88px;
+    width: 100%;
+    position: sticky; /* This will act like position: fixed; but it will take the up space*/
+    /* position: fixed; /* This one will act like sticky but it will not take up space, best for text you want to be seen at all times*/
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 3%;
+    z-index: 1000;
+}
+.myName{
+    font-size: 18px;
+}
+
+.extend{
+    height: 80vh;
+    width: 100%;
+    /*background-color: aquamarine; */
+    /* padding-top: 20vh; /* this is done becuase a fixed element does not take up space so it will hover over the the top part of the element after it, margin would move the fixed element but using padding allows the fixed box to be seen and it stays at the top */
+    background-image: linear-gradient(to right, rgba(0, 101, 190, 0.8), rgba(174, 174, 174, 0.8)),url(assets/svg/common-bg.svg);
+    background-position: center;
+}
+.logo-section{
+    display: flex;
+    align-items: center;
+    zoom: 1;
+    
+}
+.image-div{
+    margin-left: 30px;
+    width: 4.5vw;
+    height: 4.5vw;
+    background-image: url(assets/jpeg/Student_ID.jpg);
+    background-size: 4.5vw auto;
+    border:  solid 1px transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 100%;
+    zoom: 0.8;
+
+}
+
+.bannerNavigaion{
+    width: 34vw;
+    display: flex;
+    zoom: 1;
+}
+
+.bannerNavigaion a{
+    margin: 14px  22px;
+    padding: 8px;
+    color: black;
+    font-size: 16px;
+
+    transition: 0.4s ease-in-out;
+
+    text-decoration: none;
+    /* Creates space for the animated underline without shifting text */
+    border-bottom: 2px solid transparent;
+    /* --- Positioning Context for Pseudo-element --- */
+    /* Establishes a positioning context for the absolutely positioned ::after element */
+    position: relative;
+    /* Ensures the animated underline doesn't overflow and cause horizontal scrollbars */
+    overflow: hidden;
+}
+
+.bannerNavigaion a:last-child{
+    margin-right: 0;
+}
+
+.bannerNavigaion a:hover{
+    color: rgb(187, 255, 255);
+}
+
+/* Creates the animated underline using a pseudo-element */
+.bannerNavigaion a::after {
+    /* Necessary for pseudo-elements to appear */
+    content: "";
+    /* Positions the element relative to its nearest positioned ancestor (.nav-items) */
+    position: absolute;
+    /* Initially centers the underline's starting point */
+    left: 50%;
+    /* Anchors the line to the bottom of the navigation item */
+    bottom: 0;
+    /* Starts with zero width (invisible) */
+    width: 0;
+    /* Sets the thickness of the underline */
+    height: 2px;
+    /* Color of the animated underline */
+    background: #e67e22;
+    /* Smoothly animates all changed properties over 0.3 seconds with a custom easing function */
+    /* cubic-bezier allows a fluquating change of speed thoughout the transition */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    /* Offsets the element by 50% of its own width to truly center it */
+    transform: translateX(-50%);
+}
+
+/* Animation trigger on hover */
+.bannerNavigaion a:hover::after {
+    /* Expands the underline to full width of the navigation item */
+    width: 100%;
+    /* Keeps the animation originating from the center // although not needed */
+    left: 50%;
+    /* Maintains proper centering during and after the animation // not needed */
+    transform: translateX(-50%);
+}
+
+.logo-section h3{
+    margin-left: 10px;
+    letter-spacing: 1px;
+    zoom: 1.2;
+}
+
+.welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* this will vertically and horizontally center the text in the page no matter the size of the page, even */
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.welcomeTitle{
+    font-size: calc(0.86*60px);
+    padding-bottom: 20px;
+}
+
+.welcomeText{
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.btn{
+    margin: 0 auto;
+    width: fit-content;
+    background-color: aliceblue;
+    padding: 15px 80px ;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: transform .3s;
+    letter-spacing: 3px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+}
+
+ .btn:hover{
+    transform: translateY(-3px);
+}
+
+
+h2{
+    display: block;
+    font-size: 40px;
+    text-transform: uppercase;
+     letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+    color: black;
+}
+
+h2:after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    height: 5px;
+    width: 3rem;
+    background: #0062b9;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.aboutMeContainer{
+    background-color: #dbdbdb;
+    width: 100%;
+    padding: 80px 5% 100px;
+    color: gray;
+}
+
+.twoSectionGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+
+}
+
+.twoSectionGrid p{
+    font-weight: 400;
+}
+
+.sectionTitle{
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: black;
+    font-weight: 700;
+    
+}
+
+.sectionText{
+    text-align: start;
+    padding-bottom: 40px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: grey;
+}
+
+.aboutMeBtn{
+    background-color: #0062b9;
+    padding: 15px 50px;
+    color: white;
+    transition: transform .3s;
+}
+.skillContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.skill {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    font-size: 16px;
+    background: rgba(153,153,153,0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    color: #777;
+}
+
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 5% 100px;
+}
+
+.projectDiscription{
+    color: grey;
+}
+
+.topicDescription{
+    font-weight: 400;
+    padding-bottom: 110px;
+    font-size: 20px;
+}
+
+.projectRow {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 50px;
+    margin-bottom: 110px;
+}
+
+.projectRow-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.contactContainer{
+    padding: 120px 0;
+    background: linear-gradient(to right, rgba(0,98,185,0.8), rgba(0,98,185,0.8)),url(assets/svg/common-bg.svg);
+    background-size: cover;
+    background-position: center;
+    color: #eee;
+}
+
+.mainContactSection{
+    width: 92%;
+    margin: auto;
+
+}
+
+.contactTitle{
+    color: #eee;
+}
+
+.contactTitle:after{
+    background: #eee;
+}
+
+img{
+    overflow: clip;
+
+}
+
+.contactBody{
+    max-width: 800px;
+    text-align: right;
+    width: 95%;
+    background: white;
+    padding: 40px;
+    border-radius: 5px;
+    margin: 5rem auto 0px;
+}
+.contactFeild{
+    margin-bottom: 40px;
+}
+
+.contactLabel{
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+    text-align: left;
+
+}
+.contactInput {
+    color: #333;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #ebebeb;
+    font-size: 16px;
+    letter-spacing: 0px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+*:focus {
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    height: 200px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 0 50px;
+}
+
+.footerRow{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+
+h4{
+    font-size: 22px;
+}
+
+.footerDescription{
+    margin-top: 20px;
+    color: #eee;
+    font-size: 15px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.socialTitle{
+    font-size: 22px;
+    text-align: start;
+}
+
+.footerSection2{
+    width: 200px;
+}
+
+.icon-navBar{
+    display: flex;
+    list-style: none;
+    width: fit-content;
+    margin-top: 10px;
+    justify-content: space-between;
+    float: inline-end;
+    font-size: 200%;
+    color: white;
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.icon-navBar li {
+    display: inline-block;
+}
+
+.icon-navBar li a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.2s ease-in-out; /* VERY IMPORTANT: putting it here will make it apply the ease out after i let it go*/
+    zoom: 0.8;
+}
+
+.blueIcon, .youtube, .insta, .twitter{/*main class*/
+    transition: color 0.4s ease-in-out;;
+}
+
+.blueIcon:hover{/* the color will be applied after the hover condition */
+    color: #3b5998;
+}
+
+.youtube:hover{
+    color: #dd4b39;
+}
+
+.insta:hover{
+    color: #ee2a7b;
+}
+
+.twitter:hover{
+    color:rgb(68, 174, 255);
+}
+
+.finalRow{
+    padding: 35px 0;
+    border-top: #777 solid 2px;
+    font-size: 15px;
+}
+
+.finalRowText{
+    font-size: 15px;
+}
+
+.authorName{
+    color: white;
+}

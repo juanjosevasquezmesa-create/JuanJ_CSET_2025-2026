@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <label for="cars">Choose a car: </label>
+
+    <select name="cars" id="cars" onchange="whoClickedMe(this)">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+    <script src="onChangeScript.js">
+        function whoClickedMe(thing) { //thing will be the select tag that is chosen at a given time
+    console.log(thing);//this will print the html code (the select tag whole) (<select name="cars" id="cars" onchange="whoClickedMe(this)">)
+    console.log(thing.id);// this will print the id of the select tag's id 
+    // -> cars
+    console.log(thing.attributes);// this will return the atttributes in an NameNodeMap format (if confused best to look up tbh)
+    /*
+    It returns a NamedNodeMap, which is kind of like an array-like object containing each attribute node.
+
+    NamedNodeMap {
+  0: name="cars",
+  1: id="cars",
+  2: onchange="whoClickedMe(this)",
+  name: name="cars",
+  id: id="cars",
+  onchange: onchange="whoClickedMe(this)",
+  length: 3
+}
+    //
+    You can call one of these variables ie 
+
+    by Index:
+    console.log(thing.attributes[0].name);  // "name"
+    console.log(thing.attributes[0].value); // "cars"
+
+    by Name: 
+    console.log(thing.attributes["id"].value);  // "cars"
+
+    by getAttribute():
+    console.log(thing.getAttribute("name")); // "cars"
+    console.log(thing.getAttribute("id"));   // "cars"
+
+
+    */
+
+    console.log(thing.value);// this will return the value of the selected object (the options inside of the slect tag)
+    // Ie: if Saab is picked the value would be -> saab
+}
+    </script>
+</html>
